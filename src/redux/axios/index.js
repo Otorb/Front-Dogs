@@ -10,9 +10,10 @@ export const ORDER_NAME = "ORDER_NAME";
 export const ORDER_WEIGHT = "ORDER_WEIGHT";
 export const POST_DOG = "POST_DOG";
 export const DETAIL_DELETE = "DETAIL_DELETE";
+const BaseUrl = 'https://ottodogs.herokuapp.com/'
 
 export const getDogs = () => (dispatch) => {
-  return fetch("http://localhost:3001/dogs/")
+  return fetch(`${BaseUrl}/dogs/`)
     .then((resp) => resp.json())
     .then((json) =>
       dispatch({
@@ -23,7 +24,7 @@ export const getDogs = () => (dispatch) => {
 };
 
 export const getDetail = (id) => (dispatch) => {
-  return fetch(`http://localhost:3001/dogs/${id}`)
+  return fetch(`${BaseUrl}/dogs/${id}`)
     .then((response) => response.json())
     .then((json) => dispatch({ type: "GET_DETAIL", payload: json }));
 };
@@ -31,7 +32,7 @@ export const getDetail = (id) => (dispatch) => {
 export function searchDog(name) {
   return async function (dispatch) {
     try {
-      var json = await axios.get(`/dogs?name=${name}`);
+      var json = await axios.get(`${BaseUrl}/dogs?name=${name}`);
 
       return dispatch({
         type: SEARCH_DOG,
@@ -48,7 +49,7 @@ export function searchDog(name) {
 
 export function getTemperaments() {
   return async function (dispatch) {
-    var json = await axios.get("http://localhost:3001/temperaments");
+    var json = await axios.get(`${BaseUrl}/temperaments`);
 
     return dispatch({
       type: GET_TEMPERAMENTS,
@@ -88,7 +89,7 @@ export function orderWeight(payload) {
 export function postDog(payload) {
   return async function (dispatch) {
     try {
-      var json = await axios.post("http://localhost:3001/dogs/", payload);
+      var json = await axios.post( `${BaseUrl}/dogs/`, payload);
       return dispatch({
         type: POST_DOG,
         payload: json.data,
@@ -102,7 +103,7 @@ export function postDog(payload) {
 export function detailDelete(payload) {
   return async function (dispatch) {
     try {
-      var json = await axios.delete("http://localhost:3001/dogs/", payload);
+      var json = await axios.delete(`${BaseUrl}/dogs/`, payload);
       return dispatch({
         type: DETAIL_DELETE,
         payload: json.data,
