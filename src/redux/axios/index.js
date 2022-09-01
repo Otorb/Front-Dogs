@@ -10,7 +10,7 @@ export const ORDER_NAME = "ORDER_NAME";
 export const ORDER_WEIGHT = "ORDER_WEIGHT";
 export const POST_DOG = "POST_DOG";
 export const DETAIL_DELETE = "DETAIL_DELETE";
-const BaseUrl = 'https://ottodogs.herokuapp.com/'
+const BaseUrl = 'https://ottodogs.herokuapp.com'
 
 export const getDogs = () => (dispatch) => {
   return fetch(`${BaseUrl}/dogs/`)
