@@ -1,0 +1,103 @@
+/* body{
+    
+} */
+
+.unico{  
+    float: left;
+    width: 30%;
+    height: 48vh;
+    margin:20px 10px;
+    border:3px solid rgb(243, 242, 242);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    background-color: white;
+	
+}
+.card{
+    height:20px;
+    background-color: rgb(243, 242, 242);
+    display: inline-block;
+   align-items: center;
+}
+/* .imgdog{
+    height: 15px;
+} */
+.incledible{
+    width: 300px;
+     height:250px;
+   
+    border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+    
+}
+.description-temp{
+    background-color: opacity;
+    color:blueviolet;
+    font-size:25px;
+}
+.name-dog{
+    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Sans-serif;
+	background:blueviolet;
+	color:white;
+	border-radius: 50px;
+	height:40px;
+	font-size:25px;
+	padding:0 2em;
+	cursor:pointer;
+	outline:none;
+}
+
+.description-dog{
+    margin-top: -15px;
+    font-size:30px;
+}
+@media only screen and (max-width: 1500px) {
+    .padre{
+        width:75vw;
+        height: 0vw;
+        margin-left: 70px;
+    }
+    .unico{  
+        float: left;
+        width: 23vw;
+        height: 68vh;
+        border:3px solid rgb(243, 242, 242);
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        background-color: white;
+        
+    }
+    .name-dog{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Sans-serif;
+        background:blueviolet;
+        color:white;
+        border-radius: 50px;
+        height:35px;
+        font-size:20px;
+        padding:0 2em;
+        cursor:pointer;
+        outline:none;
+    }
+    .description-temp{
+        background-color: opacity;
+        color:blueviolet;
+        font-size:20px;
+    }
+    .description-dog{
+        margin-top: -15px;
+        font-size:20px;
+    }
+
+}

@@ -1,0 +1,155 @@
+.presentacion{
+    background-image: url('../images/detail.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.detalle{
+	width: 79%;
+	height: 90%;
+	margin:  70px auto ;
+	padding: 0px 30px 0px 10px;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 30px;
+	font-family: Sans-serif;
+	-webkit-text-stroke: 0.9px black;
+	color: yellow;
+	
+}
+
+.title{
+	position: relative;
+	margin: 5px;
+	width: 15%;
+	height: 15%;
+	text-align: center;
+}
+.title h1{	
+	text-transform: capitalize;
+	font-size: 50px;
+	
+	color: #f6ff8dde;
+	font-size: 50px;
+}
+
+
+.person{
+	width: 30%;
+	margin: -80px auto 0px 350px;
+
+}
+
+.person img{
+   
+	width: 300px;
+	height: 400px;
+	display: block;
+}
+.pero{
+    
+    border-radius: 50%;
+    width: 400px;
+    height: 350px;
+}
+
+.pero:hover {
+    -webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+
+.listado{
+    margin-top: -25%;
+    margin-left: 400px;
+	text-align: center;
+	display: absolute;
+    justify-content: space;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+.types{
+    /* display: flex;
+	position: absolute;
+	text-align: center; */
+	margin: 200px 0px 0px 10px;
+}
+.type{
+	position: relative;
+	margin: 10px 0px 0px 10px;
+	text-align: center;
+	
+}
+@media only screen and (max-width: 1500px) {
+    .detalle{
+        width: 90%;
+        height: 100%;
+        margin:  70px auto ;
+        padding: 0px 0px 0px 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        font-size: 30px;
+        font-family: Sans-serif;
+        -webkit-text-stroke: 0.9px black;
+        color: yellow;
+        
+    }
+    .det-2{
+        margin-top: -30%;
+        margin-left: 400px;
+        text-align: center;
+        display: absolute;
+        justify-content: space;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .person{
+        width: 20%;
+        margin: 10px auto 0px 100px;
+    
+    }
+    
+    .person img{
+       margin-top: -170px;
+       margin-left: 150px;
+        width: 300px;
+        height: 250px;
+        display: block;
+    }
+    .pero{
+        
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+    }
+    .types{
+        display: flex;
+        position: absolute;
+        text-align: center;
+        margin: 0px 50px 0px 50px;
+    }
+
+    .type{
+        position: relative;
+        margin: 10px 0px 0px 10px;
+        text-align: center;
+        
+    }
+    .listado{
+        margin-top: -20%;
+        margin-left: 400px;
+        text-align: center;
+        display: absolute;
+        justify-content: space;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}

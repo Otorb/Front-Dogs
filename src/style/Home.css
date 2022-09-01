@@ -1,0 +1,71 @@
+.home{
+    background-image: url('../images/Home.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    margin-left: -5px;
+     height: 190vh; 
+	width: 99vw;  
+	/* display: inline-block; 
+	 flex-direction: column; 
+	 justify-content: center; 
+	 align-items: center; */
+}
+.notfound{
+	height: 300px;
+  width: auto;
+}
+ 
+  img{
+	width: 100%;
+  }
+  
+.desapare{
+    -moz-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 3s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+.error{
+	margin-top: -120px;
+	width: 30%;
+	height:30%;
+	text-align: center;
+}
+@media only screen and (max-width: 1500px) {
+	.error{
+		margin-top: -80px;
+		width: 30%;
+		height:30%;
+		text-align: center;
+	}
+    .home{
+        background-image: url('../images/Home.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: -5px;
+         height: 262vh; 
+        width: 100%;  
+    
+    }
+}

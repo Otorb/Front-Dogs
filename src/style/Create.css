@@ -1,0 +1,111 @@
+.creado{
+    background-image: url('../images/Create.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    margin-left: -5px;
+     height: 150vh; 
+	width: 99vw;  
+	display: inline-block; 
+	 flex-direction: column; 
+	 justify-content: center; 
+	 align-items: center;
+}
+
+.formulario  {
+	margin: 10px;
+	padding: 10px;
+}
+
+.title-form{
+    font-family: Arial; 
+    font-size: 50px; 
+    COLOR: #1278BF; 
+    text-shadow: 0px 0px 9px #508AD3;
+}
+
+.form{
+	
+	width: 50%;
+	margin: 10% auto;
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+h4{
+	padding: 0%;
+	font-size: 20px;
+	color: white;
+	-webkit-text-stroke: 1px black;	
+}
+
+input{
+	height: 30px;
+	margin: 10px;
+}
+
+
+.created button{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Sans-serif;
+	background:rgb(47, 177, 238);
+	color:green;
+	border-radius: 50px;
+	height:40px;
+	font-size:25px;
+	padding:0 2em;
+	cursor:pointer;
+	outline:none;
+}
+.item{
+    display: inline-block;
+    
+
+}
+
+.dele{
+    color: white;
+    background-color: #008CBA;
+      border: 3px solid violet;
+      border-radius: 5px;
+  }
+  .caja {
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    color:aliceblue;
+    background: rgb(97, 174, 236);
+    border-radius:30px;
+  }
+  
+  @-webkit-keyframes cajafantasma {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes cajafantasma  {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes cajafantasma  {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes cajafantasma  {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .caja--animada {
+    -webkit-animation: cajafantasma 5s;
+    -moz-animation:    cajafantasma 5s;
+    -o-animation:      cajafantasma 5s;
+    animation:         cajafantasma 5s;
+  }

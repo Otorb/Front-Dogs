@@ -1,0 +1,81 @@
+.landing{
+	background-image: url('../images/Landing.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.landing-title{
+	font-size: 3em;
+	color: #7F0909;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-shadow: 4px 4px black;
+}
+
+.frase{
+	font-size: 2.5em;
+	color: #FFC500;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-shadow: 4px 4px black;
+}
+.frase2{
+	font-size: 1.5em;
+	color: green;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-shadow: 2px 2px black;
+}
+
+.btn-two {
+	top:25px;
+	color: blue;
+	transition: all 0.5s;
+	position: relative;	
+}
+.btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 5px solid rgba(12, 190, 221, 0.2);
+	background-color: rgba(12, 190, 221, 0.2);
+}
+.btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 5px solid rgba(12, 190, 221, 0.2);
+	background-color: rgba(12, 190, 221, 0.2);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}

@@ -1,0 +1,24 @@
+.funcion{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+} 
+
+.nose{
+  	display: flex;
+  	align-items: center;
+	list-style: none;
+    
+}
+
+.number{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px;
+	font-size: 40px;
+	color: #FFC500;
+    border-radius: 20%;
+	-webkit-text-stroke: 2px #7F0909;
+    cursor: pointer;
+}
